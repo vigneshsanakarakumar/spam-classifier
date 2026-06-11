@@ -74,8 +74,8 @@ st.markdown("""
 # ── Load Model ────────────────────────────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    model_path = Path("model/spam_model.pkl")
-    vectorizer_path = Path("model/vectorizer.pkl")
+    model_path = Path("spam_model.pkl")
+    vectorizer_path = Path("vectorizer.pkl")
 
     if not model_path.exists() or not vectorizer_path.exists():
         return None, None
